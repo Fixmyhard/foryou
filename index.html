@@ -19,6 +19,16 @@
 <head>
     <title>buat dinda</title>
     <meta name="description" content="HTML Replit Coding">
+    <!-- 
+  Made with love by Rayys!
+  
+     Blog: feeldream.id
+     Instagram: @rayyarrr
+     TikTok: @feelthisray
+     Email: rayyarr73@gmail.com
+     
+  Thanks to all <3
+-->
 </head>
 
 <body>
@@ -27,8 +37,7 @@
     <audio src="https://fixmyhard.github.io/mp3/I%20Love%20You%20So.mp3" id="linkmp3" class="sembunyi"></audio>
 
     <div id="bodyblur">
-        <!-- Wallpaper -->
-        <img src="https://feeldreams.github.io/papjalan2.jpeg" id="wallpaper" />
+        <!-- Wallpaper --><img src="https://feeldreams.github.io/papjalan2.jpeg" id="wallpaper" />
     </div>
 
     <div id='Content'>
@@ -39,8 +48,7 @@
         </div>
 
         <div id="loveIn">
-            <!-- Tombol LOVE -->
-            <label class='lovein'>&#10084;</label>
+            <!-- Tombol LOVE --><label class='lovein'>&#10084;</label>
         </div>
         <p id="ket">Sentuh LOVEnya dinda !</p>
 
@@ -60,10 +68,23 @@
 
         <div>
             <div id='pergeseran'>
-                <p><b><span>hii dindaa</span></b></p>
-                <p><b><span>maaf yaa aku<br>bikin kamu kecewa</span></b></p>
-                <p><b><span>aku cuma mau bilang</span></b></p>
-                <p><b><span>pencet ini dulu ya 👉💌</span></b></p>
+
+                <p><b>
+                        <span>hii dindaa</span>
+                    </b></p>
+
+                <p><b>
+                        <span>maaf yaa aku<br>bikin kamu kecewa</span>
+                    </b></p>
+
+                <p><b>
+                        <span>aku cuma mau bilang</span>
+                    </b></p>
+
+                <p><b>
+                        <span>pencet ini dulu ya 👉💌</span>
+                    </b></p>
+
             </div>
         </div>
 
@@ -71,89 +92,18 @@
 
         <div>
             <blockquote id='bq'>
-                <p id="kalimat">
-                    maaf ya aku belum bisa jadi yang terbaik buat kamu,<br>
-                    maaf buat yang kemarin aku ga bermaksud sama sekali nyakitin kamu<br><br>
-                    aku juga gabisa sepenuhnya ngertiin gimana cara kamu ingin dicintai,<br><br>
-                    aku terlalu banyak kurangnya buat cewe secantik kamu,<br><br>
-                    tapi aku akan terus berusaha yang terbaik buat kamu
-                </p>
+                <p id="kalimat">maaf ya aku belum bisa jadi yang terbaik buat kamu,<br><br> maaf buat yang kemarin aku
+                    ga bermaksud sama sekali nyakitin kamu<br><br>aku juga gabisa sepenuhnya
+                    ngertiin gimana cara kamu ingin dicintai,<br><br>aku terlalu banyak kurangnya buat cewe secantik
+                    kamu,<br><br>tapi aku akan terus berusaha yang terbaik buat kamu</p>
                 <p id="pesanAkhir">please forgive me, stay with me. i love uu dinda🤍</p>
             </blockquote>
         </div>
 
     </div>
 
-    <script>
-        const body = document.querySelector("body");
-        const iniwp = [];
-        iden = 1;
-        iniwp[1] = wallpaper.src;
-        iniwp[2] = wallpaper2.src;
-        iniwp[3] = wallpaper3.src;
-        iniwp[4] = wallpaper4.src;
-
-        // Simpan teks asli (termasuk <br>)
-        katakata = kalimat.innerHTML.trim();
-        pesanAkhir2 = pesanAkhir.innerHTML.trim();
-
-        // Kosongkan untuk efek ketik
-        kalimat.innerHTML = "";
-        pesanAkhir.innerHTML = "";
-
-        const swalst = Swal.mixin({
-            timer: 2500,
-            allowOutsideClick: false,
-            showConfirmButton: false,
-            timerProgressBar: true,
-            imageHeight: 90,
-        });
-
-        audio = new Audio(linkmp3.src);
-        ftganti = 0;
-        fungsi = 0;
-        fungsiAwal = 0;
-        deffotostiker = fotostiker.src;
-
-        function berjatuhan() {
-            const heart = document.createElement("div");
-            heart.className = "fas fa-heart";
-            heart.style.left = (Math.random() * 90) + "vw";
-            heart.style.animationDuration = (Math.random() * 3) + 2 + "s";
-            body.appendChild(heart);
-        }
-        setInterval(() => {
-            var heartArr = document.querySelectorAll(".fa-heart");
-            if (heartArr.length > 100) { heartArr[0].remove(); }
-        }, 100);
-
-        Content.style = "opacity:1;margin-top:14vh";
-
-        const swals = Swal.mixin({
-            allowOutsideClick: false,
-            cancelButtonColor: '#FF0040',
-            imageHeight: 80,
-        });
-
-        // Efek ketik yang mempertahankan <br>
-        function typeHTML(el, html, delay = 50) {
-            let i = 0;
-            function type() {
-                el.innerHTML = html.substring(0, i);
-                i++;
-                if (i <= html.length) {
-                    setTimeout(type, delay);
-                }
-            }
-            type();
-        }
-
-        // Jalankan efek ketik
-        typeHTML(kalimat, katakata, 40);
-        setTimeout(() => {
-            typeHTML(pesanAkhir, pesanAkhir2, 40);
-        }, katakata.length * 40 + 500);
-    </script>
+    <script>const body = document.querySelector("body"); const iniwp = []; iden = 1; iniwp[1] = wallpaper.src; iniwp[2] = wallpaper2.src; iniwp[3] = wallpaper3.src; iniwp[4] = wallpaper4.src; katakata = kalimat.innerHTML; pesanAkhir2 = pesanAkhir.innerHTML; kalimat.innerHTML = ""; pesanAkhir.innerHTML = ""; const swalst = Swal.mixin({ timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90, }); audio = new Audio('' + linkmp3.src); ftganti = 0; fungsi = 0; fungsiAwal = 0; deffotostiker = fotostiker.src; function berjatuhan() { const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart); } setInterval(function name(params) { var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) { heartArr[0].remove() } }, 100); Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({ allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80, }); </script>
+    <script src="https://feeldreams.github.io/dibacadong/script.js"></script>
 </body>
 
 </html>
